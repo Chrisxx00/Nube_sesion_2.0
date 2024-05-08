@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://www.gstatic.com/">
+    <title>Inicio de sesión</title>
+    <link rel="shortcut icon" href="Resources/Img/Perfil.png"/>
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+    <section>
+        <form>
+            <h1>Inicia Sesion</h1>
+            <div class="login-container">
+                <input id="edtuser" placeholder="Correo electronico" type="email" required> <br>
+                <input id="edtpassword" placeholder="Contraseña" type="password" required >
+            </div>
+            <button id="loginbtn">Iniciar Sesion</button>
+            <button id="btngoogle">Inciar con Google</button>
+            <button id="btnfacebook">Iniciar con Facebook</button>
+            
+            <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                    No tines cuenta? crea una aqui <a href="Templates/Register.html">Sign Up</a>
+                </div>
+            </div>
+        </form>
+    <script type="module" src="Controllers/Authentication.js"></script>
+    <script type="module" src="Controllers/Google.js"></script>
+    </section>
+</body>
+</html>
